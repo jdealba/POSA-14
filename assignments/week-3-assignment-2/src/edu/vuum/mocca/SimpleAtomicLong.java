@@ -1,4 +1,4 @@
-// Import the necessary Java synchronization and scheduling classes.
+package edu.vuum.mocca;
 
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.concurrent.locks.Lock;
@@ -7,7 +7,7 @@ import java.util.concurrent.locks.Lock;
  * @class SimpleAtomicLong
  *
  * @brief This class implements a subset of the
- *        java.util.concurrent.atomic.SimpleAtomicLong class using a
+ *        java.util.concurrent.atomic.AtomicLong class using a
  *        ReentrantReadWriteLock to illustrate how they work.
  */
 class SimpleAtomicLong
@@ -20,16 +20,17 @@ class SimpleAtomicLong
     /**
      * The ReentrantReadWriteLock used to serialize access to mValue.
      */
-    // TODO - replace the null with the appropriate initialization:
-    private ReentrantReadWriteLock mRWLock = null;
+
+    // TODO -- you fill in here by replacing the null with an
+    // initialization of ReentrantReadWriteLock.
+    private final ReentrantReadWriteLock mRWLock = null;
 
     /**
      * Creates a new SimpleAtomicLong with the given initial value.
      */
     public SimpleAtomicLong(long initialValue)
     {
-        long value = 0;
-        // TODO - you fill in here
+        // TODO -- you fill in here
     }
 
     /**
@@ -39,8 +40,10 @@ class SimpleAtomicLong
      */
     public long get()
     {
-        long value = 0;
-        // TODO - you fill in here, using a readLock()
+        long value;
+
+        // TODO -- you fill in here
+
         return value;
     }
 
@@ -52,7 +55,9 @@ class SimpleAtomicLong
     public long decrementAndGet()
     {
         long value = 0;
-        // TODO - you fill in here, using a writeLock()
+
+        // TODO -- you fill in here
+
         return value;
     }
 
@@ -64,7 +69,9 @@ class SimpleAtomicLong
     public long getAndIncrement()
     {
         long value = 0;
-        // TODO - you fill in here, using a writeLock()
+
+        // TODO -- you fill in here
+
         return value;
     }
 
@@ -76,7 +83,9 @@ class SimpleAtomicLong
     public long getAndDecrement()
     {
         long value = 0;
-        // TODO - you fill in here, using a writeLock()
+
+        // TODO -- you fill in here
+
         return value;
     }
 
@@ -88,7 +97,9 @@ class SimpleAtomicLong
     public long incrementAndGet()
     {
         long value = 0;
-        // TODO - you fill in here, using a writeLock()
+
+        // TODO -- you fill in here
+
         return value;
     }
 }
